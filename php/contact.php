@@ -46,7 +46,7 @@ $Body .= $message;
 $Body .= "\n";
 
 // Send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body, "From:"."contact@riosr.com");
 
 // Redirect to success page
 if ($success && $errors == ""){
