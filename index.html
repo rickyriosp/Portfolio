@@ -5,9 +5,9 @@
   <!-- Required meta tags-->
   <meta charset="utf-8">
   <!-- Title-->
-  <title>CodeX - Personal Portfolio / Resume / CV / vCard Template</title>
+  <title>Ricky Rios - Personal Portfolio</title>
   <!-- Description-->
-  <meta name="description" content=" Personal Portfolio / Resume / CV / vCard Template">
+  <meta name="description" content=" Personal Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
@@ -28,6 +28,8 @@
   <link id="color-scheme" rel="stylesheet" href="/css/colors/main-red.css">
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="/css/custom.css">
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -53,7 +55,7 @@
           <ul class="list-unstyled list-menu">
             <li><a class="nav-link" href="#home-area" data-scroll>Home</a></li>
             <li><a class="nav-link" href="#about-area" data-scroll>About</a></li>
-            <li><a class="nav-link" href="#services-area" data-scroll>Services</a></li>
+            <li><a class="nav-link" href="#services-area" data-scroll>Skills</a></li>
             <li><a class="nav-link" href="#portfolio-area" data-scroll>Portfolio</a></li>
             <li><a class="nav-link" href="#testimonials-area" data-scroll>Clients</a></li>
             <li><a class="nav-link" href="#blog-area" data-scroll>Blog</a></li>
@@ -62,6 +64,7 @@
         </div>
       </nav>
     </header>
+
     <div class="sections-wrapper">
       <!-- Sections-->
       <!-- Home-->
@@ -81,6 +84,7 @@
           </div>
         </div>
       </section>
+
       <!-- About-->
       <section class="single-section about-area" id="about-area">
         <div class="container">
@@ -126,63 +130,71 @@
           </div>
         </div>
       </section>
-      <!-- Services-->
+
+      <!-- Skills-->
       <section class="single-section alt-bg services-area" id="services-area">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <div class="section-heading">
-                <h2 class="section-title">My Services</h2>
-                <p class="section-description">Services i offer to my clients</p>
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-description">I am a creative problem solver. I build fullstack web applications. I use C#, ASP.NET, SQL, Javascript, Bootstrap, HTML, and CSS. I have highlighted the key technical skills that I will bring to your project.</p>
               </div>
             </div>
           </div>
           <div class="row">
             <!-- Single service-->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single-service"><i class="icon service-icon ion-logo-css3"></i>
-                <h6 class="service-title">Design Trends</h6>
-                <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="single-service" style="height: 95%;">
+                <img src="/img/icons/csharp-icon.svg" class="icon" style="height: 80px;"></img>
+                <h6 class="service-title">C# Development</h6>
+                <p class="service-description">I use C# on a daily basis to build websites. You can see examples of my work implementing C# in my projects section.</p>
               </div>
             </div>
             <!-- Single service-->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single-service"><i class="icon service-icon ion-md-images"></i>
-                <h6 class="service-title">PSD Design</h6>
-                <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="single-service" style="height: 95%;">
+                <img src="/img/icons/dotnet-mvc-icon.png" class="icon" style="height: 80px;"></img>
+                <h6 class="service-title">Full Stack Web Development</h6>
+                <p class="service-description">I use proven design patterns and frameworks to build websites. ASP.NET and MVC fits the bill for most projects.</p>
               </div>
             </div>
             <!-- Single service-->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single-service"><i class="icon service-icon ion-logo-ionic"></i>
-                <h6 class="service-title">Customer Support</h6>
-                <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="single-service" style="height: 95%;">
+                <img src="/img/icons/frontend-stack-icon.png" class="icon" style="height: 80px;"></img>
+                <h6 class="service-title">Front End Development</h6>
+                <p class="service-description">I use HTML, CSS and Javascript to build atractive responsive frontend for websites. To see my front end work go to my projects section.</p>
               </div>
             </div>
             <!-- Single service-->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single-service mb-lg-0"><i class="icon service-icon ion-logo-wordpress"></i>
-                <h6 class="service-title">Web Development</h6>
-                <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="single-service mb-lg-0" style="height: 95%;">
+                <img src="/img/icons/sql-db-icon.png" class="icon" style="height: 80px;"></img>
+                <h6 class="service-title">Database Development</h6>
+                <p class="service-description">Database development is critical to most projects. I am well versed in SQL Development from queries to design.</p>
               </div>
             </div>
             <!-- Single service-->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single-service mb-md-0"><i class="icon service-icon ion-md-move"></i>
-                <h6 class="service-title">Fully Responsive</h6>
-                <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="single-service mb-md-0" style="height: 95%;">
+                <img src="/img/icons/bootstrap-icon.svg" class="icon" style="height: 80px;"></img>
+                <h6 class="service-title">Front End Design</h6>
+                <p class="service-description">The look and feel are very important elements to any project. I use Bootstrap to bring an attractive design to your web projects.</p>
               </div>
             </div>
             <!-- Single service-->
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="single-service mb-0"><i class="icon service-icon ion-ios-rocket"></i>
-                <h6 class="service-title">Branding</h6>
+              <div class="single-service mb-0" style="height: 95%;">
+                <img src="/img/icons/blazor-icon.svg" class="icon" style="height: 80px;"></img>
+                <h6 class="service-title">Blazor</h6>
                 <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Hire-->
       <section class="single-section element-cover-bg hire-area" id="hire-area" style="background-image:url(/img/hire.jpg)">
         <div class="container">
@@ -195,6 +207,7 @@
           </div>
         </div>
       </section>
+
       <!-- Portfolio-->
       <section class="single-section portfolio-area" id="portfolio-area">
         <div class="container">
@@ -486,6 +499,7 @@
           </div>
         </div>
       </section>
+
       <!-- Testimonials-->
       <section class="single-section testimonials-area alt-bg" id="testimonials-area">
         <div class="container">
@@ -501,25 +515,31 @@
             <!-- Single review-->
             <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
               <p class="review-content">Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.</p><img class="client-avatar" src="/img/client-1.jpg" alt="Review avatar"><span class="client-name">Maria Wilson</span>
-            </div><!-- Single review-->
+            </div>
+            <!-- Single review-->
             <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
               <p class="review-content">Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.</p><img class="client-avatar" src="/img/client-2.jpg" alt="Review avatar"><span class="client-name">John Santana</span>
-            </div><!-- Single review-->
+            </div>
+            <!-- Single review-->
             <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
               <p class="review-content">Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.</p><img class="client-avatar" src="/img/client-3.jpg" alt="Review avatar"><span class="client-name">Julia Sakura</span>
-            </div><!-- Single review-->
+            </div>
+            <!-- Single review-->
             <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
               <p class="review-content">Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.</p><img class="client-avatar" src="/img/client-1.jpg" alt="Review avatar"><span class="client-name">Maria Wilson</span>
-            </div><!-- Single review-->
+            </div>
+            <!-- Single review-->
             <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
               <p class="review-content">Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.</p><img class="client-avatar" src="/img/client-2.jpg" alt="Review avatar"><span class="client-name">John Santana</span>
-            </div><!-- Single review-->
+            </div>
+            <!-- Single review-->
             <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
               <p class="review-content">Daniel did an excellent creative job. Quick and professional. Highly recommended, and will definitely work with him again.</p><img class="client-avatar" src="/img/client-3.jpg" alt="Review avatar"><span class="client-name">Julia Sakura</span>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Blog-->
       <section class="single-section blog-area" id="blog-area">
         <div class="container">
@@ -583,6 +603,7 @@
           </div>
         </div>
       </section>
+
       <!-- Contact-->
       <section class="single-section contact-area alt-bg" id="contact-area">
         <div class="container">
@@ -597,12 +618,14 @@
           <div class="row">
             <!-- Contact form-->
             <div class="col-12">
-              <form class="contact-form" id="contact-form" action="php/contact.php">
+              <form class="contact-form" id="contact-form" action="/php/contact.php" method="POST">
                 <div class="row">
                   <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required=""></div>
                   <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email" type="email" name="email" placeholder="Email" required=""></div>
                   <div class="col-12 form-group"><input class="form-control" id="contact-subject" type="text" name="subject" placeholder="Subject" required=""></div>
                   <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message" name="message" placeholder="Message" rows="5" required=""></textarea></div>
+                  <!-- Google reCAPTCHA block -->
+                  <div class="col-12 form-group g-recaptcha" data-sitekey="6Lfu3bIbAAAAAN0sLBxYb8R432dBxLqSJH6qt8nM"></div>
                   <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit" type="submit">Send message</button>
                     <p class="contact-feedback"></p>
                   </div>
@@ -612,6 +635,7 @@
           </div>
         </div>
       </section>
+
       <!-- Footer-->
       <footer class="footer-area single-section">
         <div class="container">
