@@ -65,7 +65,7 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
 
             // Redirect to success page
             if ($success && $errors == ""){
-            echo 'success';
+                echo 'success';
             }
             else{
                 echo $errors;
