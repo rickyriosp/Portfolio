@@ -27,13 +27,13 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head> 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="10" tabindex="0">
 	
 	<header class="header text-center">	    
 		<div class="force-overflow">
 			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Ricky Rios</a></h1>
 			
-			<nav class="navbar navbar-expand-lg navbar-dark" >
+			<nav id="navbar" class="navbar navbar-expand-lg navbar-dark" >
 				
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -45,9 +45,9 @@
 						
 						<div class="bio mb-3">Hi, my name is Ricky Rios and I'm a fullstack web developer. Welcome to my personal website!</div><!--//bio-->
 						<ul class="social-list list-inline py-2 mx-auto">
-							<li class="list-inline-item"><a href="https://twitter.com/rickyriosp" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
 							<li class="list-inline-item"><a href="https://www.linkedin.com/in/rickyriosp/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
 							<li class="list-inline-item"><a href="https://github.com/rickyriosp" target="_blank"><i class="fab fa-github-alt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://twitter.com/rickyriosp" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
 							<!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i></a></li> -->
 							<!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-codepen fa-fw"></i></a></li> -->
 						</ul><!--//social-list-->
@@ -56,22 +56,22 @@
 					
 					<ul class="navbar-nav flex-column text-start">
 						<li class="nav-item">
-							<a class="nav-link active" href="index.html"><i class="fas fa-user fa-fw me-2"></i>About Me<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#about-me"><i class="fas fa-user fa-fw me-2"></i>About Me</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="portfolio.html"><i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio</a>
+							<a class="nav-link" href="#overview" data-bs-scroll><i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="services.html"><i class="fas fa-briefcase fa-fw me-2"></i>Services &amp; Pricing</a>
+							<a class="nav-link" href="#testimonials"><i class="fas fa-briefcase fa-fw me-2"></i>Services &amp; Pricing</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Resume</a>
+							<a class="nav-link" href="#projects"><i class="fas fa-file-alt fa-fw me-2"></i>Resume</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="blog-home.html"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
+							<a class="nav-link" href="#blog"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
+							<a class="nav-link" href="#"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -106,7 +106,7 @@
 	</header><!--//sidebar-->
 	
 	<div class="main-wrapper">		
-		<section class="about-me-section p-3 p-lg-5 theme-bg-light">
+		<section id="about-me" class="about-me-section p-3 p-lg-5 theme-bg-light">
 			<div class="container">
 				<div class="profile-teaser row">
 					
@@ -128,7 +128,7 @@
 			</div>
 		</section><!--//about-me-section-->
 		
-		<section class="overview-section p-3 p-lg-5">
+		<section id="overview" class="overview-section p-3 p-lg-5">
 			<div class="container">
 				<h2 class="section-title font-weight-bold mb-3">What I do</h2>
 				<div class="section-intro mb-5">I have more than 10 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my <a class="text-link" href="resume.html">online resume</a> and <a class="text-link" href="portfolio.html">project portfolio</a>.</div>
@@ -201,7 +201,7 @@
 		
 		<div class="container"><hr></div>
 		
-		<section class="testimonials-section p-3 p-lg-5">
+		<section id="testimonials" class="testimonials-section p-3 p-lg-5">
 			<div class="container">
 				<h2 class="section-title font-weight-bold mb-5">Testimonials</h2>
 				
@@ -333,7 +333,7 @@
 		
 		<div class="container"><hr></div>
 		
-		<section class="featured-section p-3 p-lg-5">
+		<section id="projects" class="featured-section p-3 p-lg-5">
 			<div class="container">
 				<h2 class="section-title font-weight-bold mb-5">Featured Projects</h2>
 				<div class="row">
@@ -441,7 +441,7 @@
 		
 		<div class="container"><hr></div>
 		
-		<section class="latest-blog-section p-3 p-lg-5">
+		<section id="blog" class="latest-blog-section p-3 p-lg-5">
 			<div class="container">
 				<h2 class="section-title font-weight-bold mb-5">Latest Blog Posts</h2>
 				<div class="row">
