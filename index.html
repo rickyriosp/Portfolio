@@ -59,35 +59,24 @@
 							<a class="nav-link" href="#about-me"><i class="fas fa-user fa-fw me-2"></i>About Me</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#overview" data-bs-scroll><i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio</a>
+							<a class="nav-link" href="#overview" data-bs-scroll><i class="fas fa-laptop-code fa-fw me-2"></i>Skills</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#testimonials"><i class="fas fa-briefcase fa-fw me-2"></i>Services &amp; Pricing</a>
+							<a class="nav-link" href="#testimonials"><i class="fas fa-briefcase fa-fw me-2"></i>Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#projects"><i class="fas fa-file-alt fa-fw me-2"></i>Resume</a>
+							<a class="nav-link" href="#projects"><i class="fas fa-code fa-fw me-2"></i>Coding Challenges</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#blog"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<i class="fas fa-cogs fa-fw me-2"></i>More Pages
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="project.html">Project Page</a></li>
-								<li><a class="dropdown-item" href="blog-home.html">Blog Home 1</a></li>
-								<li><a class="dropdown-item" href="blog-home-alt.html">Blog Home 2</a></li>
-								<li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-							</ul>
-						</li>
+							<a class="nav-link" href="#contact"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
+						</li>						
 					</ul><!--//sidebar-navigation-->
 					
 					<div class="my-2">
-						<a class="btn btn-primary" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
+						<a class="btn btn-primary" href="#contact"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
 					</div><!--//call-to-action-->
 					
 	
@@ -491,6 +480,39 @@
 			</div><!--//container-->
 			
 		</section><!--//latest-blog-section-->
+
+		<div class="container"><hr></div>
+
+		<section id="contact" class="contact-section px-3 py-5 p-md-5">
+		    <div class="container">
+			    <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="/php/contact.php">
+			        <h3 class="text-center mb-3">Get In Touch</h3>
+			        <div class="row g-3">                                                           
+		                <div class="col-12 col-md-6">
+		                    <label class="sr-only" for="cname">Name</label>
+		                    <input type="text" class="form-control" id="cname" name="name" placeholder="Name" minlength="2" required="" aria-required="true">
+		                </div>                    
+		                <div class="col-12 col-md-6">
+		                    <label class="sr-only" for="cemail">Email</label>
+		                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required="" aria-required="true">
+		                </div>
+		                <div class="col-12">
+							<label class="sr-only" for="csubject">Subject</label>
+		                    <input type="text" class="form-control" id="csubject" name="subject" placeholder="Subject" required="" aria-required="true">
+						</div>
+		                <div class="col-12">
+		                    <label class="sr-only" for="cmessage">Your message</label>
+		                    <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="10" required="" aria-required="true"></textarea>
+		                </div>
+						<!-- Google reCAPTCHA block -->
+						<div class="col-12 form-group g-recaptcha" data-sitekey="6Lfu3bIbAAAAAN0sLBxYb8R432dBxLqSJH6qt8nM"></div>
+						<div class="form-group col-12">
+							<button type="submit" class="btn btn-block btn-primary py-2">Send Now</button>
+		                </div>                           
+		            </div><!--//form-row-->
+		        </form>
+		    </div><!--//container-->
+	    </section><!--//contact-section-->
 
 		<footer class="footer text-center py-4">
 			<small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>

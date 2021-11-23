@@ -3,31 +3,31 @@
 $errors = "";
 
 // Name
-if (empty($_POST["name"])) {
+if (empty($_POST["cname"])) {
     $errors = "Name is required ";
 } else {
-    $name = $_POST["name"];
+    $name = $_POST["cname"];
 }
 
 // Email
-if (empty($_POST["email"])) {
+if (empty($_POST["cemail"])) {
     $errors .= "Email is required ";
 } else {
-    $email = $_POST["email"];
+    $email = $_POST["cemail"];
 }
 
 // Subject
-if (empty($_POST["subject"])) {
+if (empty($_POST["csubject"])) {
     $errors = "Subject is required ";
 } else {
-    $subject = $_POST["subject"];
+    $subject = $_POST["csubject"];
 }
 
 // Message
-if (empty($_POST["message"])) {
+if (empty($_POST["cmessage"])) {
     $errors .= "Message is required ";
 } else {
-    $message = $_POST["message"];
+    $message = $_POST["cmessage"];
 }
 
 // Form validation
