@@ -261,3 +261,18 @@
         margin-bottom: 10px;
     }
 }
+
+/*----------- Footer -----------*/
+.footer-area a {
+    text-decoration: none;
+}
+
+.footer-area .mini-footer {
+    -ms-flex-align: center;
+    -ms-flex-pack: justify;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
