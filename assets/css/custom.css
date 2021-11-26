@@ -263,6 +263,11 @@
 }
 
 /*----------- Footer -----------*/
+body.dark-mode .footer-area {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: none !important;
+}
+
 .footer-area a {
     text-decoration: none;
 }
@@ -275,4 +280,12 @@
     display: flex;
     justify-content: center;
     padding: 40px 0;
+}
+
+.footer-area .mini-footer #footer-logo {
+    content: url("/assets/images/personal/Black logo - no background - large.svg");
+}
+
+body.dark-mode .footer-area .mini-footer #footer-logo {
+    content: url("/assets/images/personal/White logo - no background - large.svg");
 }
