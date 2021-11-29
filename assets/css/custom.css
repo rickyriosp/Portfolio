@@ -1,4 +1,9 @@
-/*----------- Portfolio -----------*/
+/*----------- Skills -----------*/
+.item-inner {
+    text-align: center;
+}
+
+/*----------- Projects -----------*/
 .portfolio-area .filter-control {
     margin-bottom: 14px;
 }
