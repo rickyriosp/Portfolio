@@ -46,3 +46,8 @@ modeToggler.addEventListener('change', () => {
 	}
 });
 
+
+// Dark mode by default on first open
+modeToggler.checked = true;
+const customEvent = new Event('change');
+modeToggler.dispatchEvent(customEvent);
