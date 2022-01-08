@@ -37,7 +37,7 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
 
         // Google secret API
-        $secretAPIkey = getenv("secretAPIkey");
+        $secretAPIkey = getenv("reCaptchaAPIkey");
 
         // reCAPTCHA response verification
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretAPIkey.'&response='.$_POST['g-recaptcha-response']);
