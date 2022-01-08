@@ -3,7 +3,7 @@
 const slider = tns({
     container: '.testimonial-carousel',
     loop: true,
-    items: 3,
+    items: 4,
     responsive: {
 	    0:{
             items:1,
@@ -12,7 +12,7 @@ const slider = tns({
             items:2,
         },
         1200: {
-	        items:3,
+	        items:4,
         }
 
 	},
@@ -27,5 +27,4 @@ const slider = tns({
     mouseDrag: true,
     controls: false,
     speed: 800,
-
 });
