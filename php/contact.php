@@ -68,6 +68,7 @@ if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
                 echo 'success';
             }
             else{
+                echo 'errors sending email';
                 echo $errors;
             }
         } else {
