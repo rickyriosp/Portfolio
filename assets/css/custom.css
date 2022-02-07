@@ -305,3 +305,10 @@ body.dark-mode .modal .btn-close {
   position: relative;
   float: right;
 }
+
+/*----------- Cards -----------*/
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}

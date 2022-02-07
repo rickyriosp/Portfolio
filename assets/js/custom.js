@@ -1,3 +1,52 @@
+/*----------- Blog Posts -----------*/
+let getBlogPosts = async function(qty) {
+    url = `https://blog.riosr.com/Api/Post?postQty=${qty}`;
+    let response = await fetch(url);
+
+    if (response.ok) { // if HTTP-status is 200-299
+        // get the response body (the method explained below)
+        let json = await response.json();
+
+        console.log(json);
+
+        let container = document.getElementById("blog-posts-container");
+        json.forEach(element => {
+            let htmlString =
+                `
+                <!-- col -->
+                <div class="col-md-4 mb-5">
+                    <!-- card -->
+                    <div class="card blog-post-card">
+                        <img class="card-img-top" src="data:${element.contentType};base64,${element.imageData}">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="theme-link" href="https://blog.riosr.com/BlogPosts/UrlFriendly/${element.slug}" target="_blank">${element.title}</a></h5>
+                            <p class="card-text">${element.abstract}</p>
+                            <p class="mb-0"><a class="text-link" href="https://blog.riosr.com/BlogPosts/UrlFriendly/${element.slug}" target="_blank">Read more &rarr;</a></p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Published on ${(new Date(element.created)).toLocaleDateString('en-US')}</small>
+                        </div>
+                    </div>
+                </div>
+                `;
+
+            container.append(stringToHTML(htmlString));
+        });
+    } else {
+        alert("HTTP-Error: " + response.status);
+    }
+}
+
+let stringToHTML = function(str) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(str, 'text/html');
+
+    return doc.getElementsByClassName('col-md-4 mb-5')[0];
+};
+
+getBlogPosts(3);
+
+
 /*----------- Contact -----------*/
 
 $('.contact-form').on('submit', function(event) {
