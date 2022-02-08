@@ -7,8 +7,6 @@ let getBlogPosts = async function(qty) {
         // get the response body (the method explained below)
         let json = await response.json();
 
-        console.log(json);
-
         let container = document.getElementById("blog-posts-container");
         json.forEach(element => {
             let htmlString =
