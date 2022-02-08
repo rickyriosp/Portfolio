@@ -267,6 +267,36 @@
   }
 }
 
+/*----------- Contact Form -----------*/
+#contact-submit.wait {
+  background-color: #222 !important;
+  border-color: #222 !important;
+}
+
+#contact-submit.success {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+#contact-submit.error {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.contact-feedback {
+  display: none;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.contact-feedback.success {
+  color: #28a745;
+}
+
+.contact-feedback.error {
+  color: #dc3545;
+}
+
 /*----------- Footer -----------*/
 body.dark-mode .footer-area {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
