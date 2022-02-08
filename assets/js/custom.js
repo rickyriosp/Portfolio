@@ -12,7 +12,7 @@ let getBlogPosts = async function(qty) {
             let htmlString =
                 `
                 <!-- col -->
-                <div class="col-md-4 mb-5">
+                <div class="col-md-6 col-xl-4 mb-5">
                     <!-- card -->
                     <div class="card blog-post-card">
                         <img class="card-img-top" src="data:${element.contentType};base64,${element.imageData}">

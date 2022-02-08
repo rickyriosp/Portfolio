@@ -339,6 +339,6 @@ body.dark-mode .modal .btn-close {
 /*----------- Cards -----------*/
 .card-img-top {
   width: 100%;
-  height: 15vw;
+  height: 23vh;
   object-fit: cover;
 }
