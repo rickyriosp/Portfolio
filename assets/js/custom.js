@@ -1,7 +1,8 @@
 /*----------- Blog Posts -----------*/
 let getBlogPosts = async function(qty) {
+    localUrl = `https://localhost:5001/api/Post?postQty=${qty}`;
     url = `https://blog.riosr.com/Api/Post?postQty=${qty}`;
-    let response = await fetch(url);
+    let response = await fetch(localUrl);
 
     if (response.ok) { // if HTTP-status is 200-299
         // get the response body (the method explained below)
@@ -39,7 +40,7 @@ let stringToHTML = function(str) {
     var parser = new DOMParser();
     var doc = parser.parseFromString(str, 'text/html');
 
-    return doc.getElementsByClassName('col-md-4 mb-5')[0];
+    return doc.getElementsByClassName('col-md-6')[0];
 };
 
 getBlogPosts(3);
