@@ -2,7 +2,7 @@
 let getBlogPosts = async function(qty) {
     localUrl = `https://localhost:5001/api/Post?postQty=${qty}`;
     url = `https://blog.riosr.com/Api/Post?postQty=${qty}`;
-    let response = await fetch(localUrl);
+    let response = await fetch(url);
 
     if (response.ok) { // if HTTP-status is 200-299
         // get the response body (the method explained below)
