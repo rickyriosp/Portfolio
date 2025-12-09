@@ -107,7 +107,7 @@ document.getElementById("viewResumeButton").addEventListener("click", function (
     mainWrapper.style.display = "none";
 
     // Redirect to index.html with the target section
-    window.location.href = `index.html#resume`;
+    window.location.href = `#resume`;
 
     // Scroll to the top of the resume section
     window.scrollTo({
@@ -140,7 +140,7 @@ document.querySelectorAll('.navbar-nav a').forEach(link => {
             mainWrapper.style.display = "block";
 
             // Redirect to index.html with the target section
-            window.location.href = `index.html${targetSection}`;
+            window.location.href = `${targetSection}`;
         }
     });
 });
