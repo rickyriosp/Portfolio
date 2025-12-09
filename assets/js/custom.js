@@ -1,4 +1,5 @@
-/*----------- Blog Posts -----------*/
+/*----------- Blog Posts -----------*/ 
+
 let getBlogPosts = async function(qty) {
     localUrl = `https://localhost:5001/api/Post?postQty=${qty}`;
     url = `https://blog.riosr.com/Api/Post?postQty=${qty}`;
@@ -89,4 +90,57 @@ $('.contact-form').on('submit', function(event) {
                 }
             });
     }, 1000);
+});
+
+
+/*----------- View Resume Button -----------*/
+
+document.getElementById("viewResumeButton").addEventListener("click", function () {
+    // Select the hidden resume section
+    const resumeHidden = document.getElementById("resume-hidden");
+    // Select the visible main-wrapper
+    const mainWrapper = document.querySelector(".main-wrapper:not(#resume-hidden)");
+
+    // Make the hidden resume section visible
+    resumeHidden.style.display = "block";
+    // Hide the other main-wrapper
+    mainWrapper.style.display = "none";
+
+    // Redirect to index.html with the target section
+    window.location.href = `index.html#resume`;
+
+    // Scroll to the top of the resume section
+    window.scrollTo({
+        top: resumeHidden.offsetTop,
+        behavior: "smooth"
+    });
+});
+
+
+/*----------- Navbar Link Handling on Resume Page -----------*/
+
+document.querySelectorAll('.navbar-nav a').forEach(link => {
+    link.addEventListener('click', function (event) {
+        // Check if the current URL is index.html#resume
+        if (window.location.href.includes('resume')) {
+            // Prevent default navigation behavior
+            event.preventDefault();
+
+            // Get the target section from the clicked link's href
+            const targetSection = link.getAttribute('href');
+
+            // Select the hidden resume section
+            const resumeHidden = document.getElementById("resume-hidden");
+            // Select the visible main-wrapper
+            const mainWrapper = document.querySelector(".main-wrapper:not(#resume-hidden)");
+
+            // Make the hidden resume section visible
+            resumeHidden.style.display = "none";
+            // Hide the other main-wrapper
+            mainWrapper.style.display = "block";
+
+            // Redirect to index.html with the target section
+            window.location.href = `index.html${targetSection}`;
+        }
+    });
 });

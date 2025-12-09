@@ -1,0 +1,146 @@
+
+/* Minimal, print-friendly CSS for a Harvard-style resume */
+
+:root {
+  --text: #111;
+  --muted: #555;
+  --line: #bbb;
+  --maxw: 816px;
+  --leading: 1.25;
+  --section-gap: 12px;
+  --item-gap: 10px;
+  --font-size: 12pt; /* ~10-12 pt typical resume sizes */
+}
+
+* { box-sizing: border-box; }
+
+body .main-wrapper section.resume-section {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  color: var(--text);
+  font-family: Cambria, "Times New Roman", Times, serif;
+  background-size: 20% !important;
+  background: #E5E8EB url('/assets/images/geometric-pattern.webp');
+  line-height: var(--leading);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.resume-section {
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Main content */
+.resume-section .content-wrap {
+  height: 100%;
+  width: 100%;
+  padding: 32px;
+  overflow: auto;
+}
+
+.resume-section .content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  margin: 0 auto 16px;
+  background-color: whitesmoke;
+  box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.5);
+  max-width: var(--maxw);
+  font-size: var(--font-size);
+}
+
+/* Contact Info */
+.resume-section .contact-header {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 16px;
+  max-width: var(--maxw);
+}
+
+.resume-section .name {
+  margin: 0 0 6px;
+  font-size: 20pt;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--text);
+}
+
+.resume-section .contact {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11pt;
+}
+
+.resume-section .contact a { color: inherit; text-decoration: none; }
+.resume-section .contact a:hover { text-decoration: underline; }
+.resume-section .sep { margin: 0 2px; color: var(--muted); }
+
+/* Sections */
+.resume-section .section { 
+  flex-grow: 1;
+  margin-top: var(--section-gap);
+}
+
+.resume-section .title {
+  margin: 0 0 8px;
+  font-variant: small-caps;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--line);
+  padding-top: 8px;
+  color: var(--text);
+}
+
+/* Items (entries) */
+.resume-section .item { margin-bottom: var(--item-gap); }
+.resume-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.resume-section .role { width: auto; font-weight: 700; }
+.resume-section .info { width: auto; color: var(--muted) !important; white-space: nowrap; }
+.resume-section .info .dot { margin: 0 6px; color: var(--muted); }
+
+.resume-section .org {
+  width: auto;
+  margin: 2px 0 4px;
+  font-style: italic;
+}
+
+.resume-section .details {
+  margin: 0 0 3px;
+}
+
+/* Bullets */
+.resume-section .bullets {
+  margin: 4px 0 0 16px;
+  padding: 0;
+}
+
+.resume-section .bullets li {
+  margin: 2px 0;
+}
+
+/* Print optimization: US Letter, ~1" margins, remove color dependency */
+@page {
+  size: Letter;
+  margin: 1in;
+}
+
+@media print {
+  body { padding: 0; }
+  .name { font-size: 18pt; }
+  .contact { font-size: 10pt; }
+  .content { font-size: 10pt; }
+  a { text-decoration: none; color: inherit; }
+}

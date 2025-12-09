@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+    <script defer src="assets/fontawesome-free-7.1.0-web/js/all.min.js"></script>
 
     <!-- Devicons -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -38,6 +38,9 @@
 
     <!-- Custom CSS (Add your custom CSS styles to this file)-->
     <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Resume CSS -->
+    <link rel="stylesheet" href="assets/css/resume.css">
 
     <!-- Google reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -59,7 +62,9 @@
                 <div id="navigation" class="collapse navbar-collapse flex-column">
                     <!-- profile-section -->
                     <div class="profile-section pt-3 pt-lg-0">
-                        <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile-pic.jpg" alt="image">
+                        <a href="/index.html">
+                            <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile-pic.jpg" alt="image">
+                        </a>
 
                         <!-- bio -->
                         <div class="bio mb-3">Hi, my name is Ricky and I'm a full-stack web developer. Welcome to my personal website!</div>
@@ -68,7 +73,7 @@
                         <ul class="social-list list-inline py-2 mx-auto">
                             <li class="list-inline-item"><a href="https://www.linkedin.com/in/rickyriosp/" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
                             <li class="list-inline-item"><a href="https://github.com/rickyriosp" target="_blank"><i class="fab fa-github-alt fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="https://twitter.com/rickyriosp" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://x.com/rickyriosp" target="_blank"><i class="fab fa-square-x-twitter fa-fw"></i></a></li>
                             <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i></a></li> -->
                             <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-codepen fa-fw"></i></a></li> -->
                         </ul>
@@ -91,6 +96,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#blog"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume"><i class="fas fa-file fa-fw me-2"></i>Resume</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contact</a>
@@ -143,7 +151,7 @@
             </div>
         </section>
 
-        <!-- overview-section -->
+        <!-- skills-section -->
         <section id="skills" class="overview-section p-3 p-lg-5">
             <!-- container -->
             <div class="container">
@@ -188,7 +196,7 @@
                     <div class="item col-12 col-md-6 col-lg-4">
                         <!-- item-inner -->
                         <div class="item-inner">
-                            <img src="assets/images/icons/sql-db-icon.png" class="icon" style="height: 80px;" alt="Database Icon"></img>
+                            <img src="assets/images/icons/sql-db-icon.png" class="icon" style="height: 80px;" alt="Database Icon">
                             <!-- <i class="fas fa-database" class="icon" style="font-size: 60pt;" alt="Database Icon"></i> -->
                             <h3 class="item-title">Database Development</h3>
                             <div class="item-desc">Database development is critical to most projects. I am well versed in SQL Development from queries to design.</div>
@@ -224,7 +232,7 @@
             <hr>
         </div>
 
-        <!-- featured-section -->
+        <!-- projects-section -->
         <section id="projects" class="featured-section portfolio-area p-3 p-lg-5">
             <!-- container -->
             <div class="container">
@@ -476,7 +484,7 @@
             <hr>
         </div>
 
-        <!-- testimonials-section -->
+        <!-- challenges-section -->
         <section id="challenges" class="testimonials-section portfolio-area p-3 p-lg-5">
             <div class="container">
                 <h2 class="section-title font-weight-bold mb-3">Coding Challenges</h2>
@@ -638,6 +646,33 @@
             <hr>
         </div>
 
+        <!-- resume-section -->
+        <section id="resume" class="view-resume-section p-3 p-lg-5">
+            <div class="container">
+                <h2 class="section-title font-weight-bold mb-3">Resume</h2>
+                <div class="section-intro mb-5">Check out my resume to see my full experience and skills.</div>
+                
+                <button id="viewResumeButton" class="btn btn-primary mb-3" type="button">
+                    View Resume
+                </button>
+
+                <!-- <div class="mb-4">
+                    <a class="btn btn-primary me-2 mb-3" href="resume.html"><i class="fas fa-file-download me-2"></i><span class="d-none d-md-inline">Download</span> Resume</a>
+                </div> -->
+
+                <!-- <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#resumeCollapse" aria-expanded="false" aria-controls="resumeCollapse">
+                    View Resume
+                </button>
+                <div class="collapse" id="resumeCollapse">
+                    <iframe src="resume.html" style="width: 100%; height: 600px; border: none;"></iframe>
+                </div> -->
+            </div>
+        </section>
+
+        <div class="container">
+            <hr>
+        </div>
+
         <!-- contact-section -->
         <section id="contact" class="contact-section px-3 py-5 p-md-5">
             <!-- container -->
@@ -686,6 +721,203 @@
                     </div>
                     <div class="col-12 col-sm-4">
                         <div class=""><i class="fas fa-phone fa-2x"></i>
+                            <p class=""><a href="tel:+14078528590">+1 407 852 8596</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class=""><i class="fas fa-envelope fa-2x"></i>
+                            <p class="bio"><a href="mailto:ricardo@riosr.com">ricardo@riosr.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mini-footer">
+                    <div class="col-12 col-lg-5" style="height: 80px;">
+                        <img id="footer-logo" src="assets/images/personal/Black logo - no background - large.svg" alt="Ricky Rios Logo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> | Modified by Ricky Rios</small>
+        </footer>
+    </div>
+
+    <!-- Hidden Resume Section -->
+    <div id="resume-hidden" class="main-wrapper" style="display: none;">
+        <!-- resume-section -->
+        <section id="resume" class="resume-section p-3 p-lg-5">
+            <div class="container">
+                <main class="content-wrap">
+                    <article class="content">
+                        <!-- Contact Information -->
+                        <section class="contact-header">
+                            <h1 class="name">Ricardo Rios</h1>
+                            <p class="contact">
+                                Gainesville, FL
+                                <span class="sep">&bull;</span>
+                                <a href="mailto:riki.rios91@gmail.com">riki.rios91@gmail.com</a>
+                                <span class="sep">&bull;</span>
+                                <a href="tel:+1407852-8596">(407) 852-8596</a>
+                                <span class="sep">&bull;</span>
+                                <a href="https://www.linkedin.com/in/rickyriosp" target="_blank"
+                                >linkedin.com/in/rickyriosp</a
+                                >
+                                <span class="sep">&bull;</span>
+                                <a href="https://github.com/rickyriosp" target="_blank">github.com/rickyriosp</a>
+                            </p>
+                        </section>
+            
+                        <!-- Relevant Experience -->
+                        <section id="experience" class="section">
+                            <h2 class="title">Experience</h2>
+                
+                            <div class="item">
+                                <div class="row">
+                                    <div class="role"><strong>Cloud Software Engineer</strong></div>
+                                    <div class="info">
+                                        <span class="place">Remote, FL</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="org">CAPGEMINI</div>
+                                    <div class="info">
+                                        <time class="date">July 2022 - Present</time>
+                                    </div>
+                                </div>
+                                <ul class="bullets">
+                                    <li>
+                                        Maintained enterprise Java and SpringBoot applications hosted on AWS by addressing
+                                        incidents tracked in ServiceNow, applying troubleshooting techniques to deliver
+                                        solutions before SLA deadlines; resolved recurring issues faster using tools such as
+                                        Splunk.
+                                    </li>
+                                    <li>
+                                        Implemented bug fixes and feature enhancements within agile sprint cycles, improving
+                                        application stability and directly supporting business-critical operations.
+                                    </li>
+                                    <li>
+                                        Collaborated with cross-functional teams including DevOps, QA, and Product
+                                        Management to ensure seamless integration and deployment of updates, enhancing
+                                        overall product quality and user satisfaction.
+                                    </li>
+                                    <li>
+                                        Enhanced observability by refactoring and expanding logging coverage across services
+                                        by ~30%, enabling faster root-cause analysis and reducing time-to-resolution for
+                                        recurring incidents.
+                                    </li>
+                                    <li>
+                                        Led Infrastructure-as-Code (IaC) initiative by implementing AWS CDK (TypeScript) to
+                                        provision and manage core resources (EC2, S3, Auto Scaling Groups, Application Load
+                                        Balancers), improving deployment speed, scalability, and consistency.
+                                    </li>
+                                    <li>
+                                        Developed deployment pipelines using GitLab CI/CD, automating build, test, and
+                                        deployment of both infrastructure and applications, reducing release cycles and
+                                        manual errors.
+                                    </li>
+                                    <li>
+                                        Drove AWS cost optimization eff orts by auditing resource usage using AWS Cost
+                                        Explorer and Compute Optimizer, enforcing tagging strategy, and right-sizing
+                                        underutilized EC2 instances, cutting infrastructure spend by ~20%.
+                                    </li>
+                                    <li>
+                                        Configured services with AWS CDK to enable flexible scaling of cloud resources while
+                                        applying automation techniques to align computing capacity with demand, improving
+                                        EC2 cost efficiency.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+            
+                        <!-- Technical Skills & Projects -->
+                        <section id="skills" class="section">
+                            <h2 class="title">Technical Skills & Projects</h2>
+                
+                            <div class="item">
+                                <p class="details">
+                                <strong>Programming:</strong> Java, Spring, Spring Boot, Hibernate, SQL, Oracle SQL,
+                                Angular, TypeScript.
+                                </p>
+                                <p class="details">
+                                <strong>Cloud:</strong> AWS, AWS CDK, Terraform, Infrastructure as Code (IaC), Git,
+                                GitHub Actions, GitLab Pipelines, CI/CD.
+                                </p>
+                                <p class="details"><strong>Tools:</strong> Splunk, Confluence, Jira, ServiceNow.</p>
+                            </div>
+                
+                            <div class="item">
+                                <div class="row">
+                                    <div class="role"><strong>AI-Powered Web Application</strong></div>
+                                    <!-- <div class="info">
+                                    <time class="date">Jan. 2024 - May 2025</time>
+                                    </div> -->
+                                </div>
+                                <ul class="bullets">
+                                    <li>
+                                        Built and deployed a serverless, AI-powered web application during a hackathon using
+                                        a fully automated Infrastructure-as-Code (IaC) approach with Terraform.
+                                    </li>
+                                    <li>
+                                        Built and deployed a serverless web app using Terraform to provision AWS services
+                                        end-to-end (CloudFront, S3, API Gateway, Lambda, Bedrock).
+                                    </li>
+                                    <li>
+                                        Implemented secure CI/CD pipelines with GitHub Actions and OIDC, automating
+                                        Terraform deployments, S3 uploads, and CloudFront cache invalidation.
+                                    </li>
+                                    <li>
+                                        Packaged and deployed backend Lambda functions with dependencies via Lambda Layers,
+                                        securing API Gateway with API keys.
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+            
+                        <!-- Certifications -->
+                        <section id="certifications" class="section">
+                            <h2 class="title">Certifications</h2>
+                
+                            <div class="item">
+                                <p>
+                                AWS Certified Solutions Architect - Professional | HashiCorp Terraform Associate |
+                                CompTIA Security+
+                                </p>
+                            </div>
+                        </section>
+            
+                        <!-- Education -->
+                        <section id="education" class="section">
+                            <h2 class="title">Education</h2>
+                
+                            <div class="item">
+                                <div class="row">
+                                    <div class="role"><strong>Universidad de Las Palmas de Gran Canaria</strong></div>
+                                    <div class="info">
+                                        <span class="place">Las Palmas, Spain</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="org">Bachelor's Degree in Electrical Engineering</div>
+                                    <!-- <div class="info">
+                                    <time class="date">July 2022 - Present</time>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </main>
+            </div>
+        </section>
+
+        <!-- footer-section -->
+        <footer class="footer footer-area text-center py-4 theme-bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class=""><i class="fas fa-map fa-2x"></i>
+                            <p class=""><a href="https://goo.gl/maps/PkgzHUGqA86Gyinv5" target="_blank">Florida, USA.</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class=""><i class="fas fa-phone fa-2x"></i>
                             <p class=""><a href="tel:+14075484990">+1 407 548 4990</a></p>
                         </div>
                     </div>
@@ -703,7 +935,6 @@
             </div>
             <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> | Modified by Ricky Rios</small>
         </footer>
-
     </div>
 
     <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->
