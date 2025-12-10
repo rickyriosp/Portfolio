@@ -98,13 +98,15 @@ $('.contact-form').on('submit', function(event) {
 document.getElementById("viewResumeButton").addEventListener("click", function () {
     // Select the hidden resume section
     const resumeHidden = document.getElementById("resume-hidden");
-    // Select the visible main-wrapper
-    const mainWrapper = document.querySelector(".main-wrapper:not(#resume-hidden)");
+    // Select all elements under .main-wrapper that do not have the .no-hide class
+    const elementsToHide = document.querySelectorAll('.main-wrapper > :not(.no-hide)');
 
+    // Hide the other sections
+    elementsToHide.forEach(element => {
+        element.style.display = "none";
+    });
     // Make the hidden resume section visible
     resumeHidden.style.display = "block";
-    // Hide the other main-wrapper
-    mainWrapper.style.display = "none";
 
     // Redirect to index.html with the target section
     window.location.href = `#resume`;
@@ -131,16 +133,54 @@ document.querySelectorAll('.navbar-nav a').forEach(link => {
 
             // Select the hidden resume section
             const resumeHidden = document.getElementById("resume-hidden");
-            // Select the visible main-wrapper
-            const mainWrapper = document.querySelector(".main-wrapper:not(#resume-hidden)");
+            // Select all elements under .main-wrapper that do not have the .no-hide class
+            const elementsToHide = document.querySelectorAll('.main-wrapper > :not(.no-hide)');
 
+            // Hide the other main-wrapper
+            elementsToHide.forEach(element => {
+                element.style.display = "block";
+            });
             // Make the hidden resume section visible
             resumeHidden.style.display = "none";
-            // Hide the other main-wrapper
-            mainWrapper.style.display = "block";
 
             // Redirect to index.html with the target section
             window.location.href = `${targetSection}`;
         }
     });
+});
+
+
+/*----------- Counter API endpoint -----------*/
+const counterApiUrl = 'https://resume.riosr.com/counter';
+
+// Get button handler
+document.getElementById('get-counter-btn').addEventListener('click', async function() {
+    try {
+        const response = await fetch(counterApiUrl);
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById('counter-value').textContent = data.value;
+        } else {
+            console.log('Error fetching counter value');
+        }
+    } catch (error) {
+        console.log('Network error');
+    }
+});
+
+// Increment button handler
+document.getElementById('increment-counter-btn').addEventListener('click', async function() {
+    try {
+        const response = await fetch(counterApiUrl, {
+            method: 'POST'
+        });
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById('counter-value').textContent = data.value;
+        } else {
+            console.log('Error incrementing counter');
+        }
+    } catch (error) {
+        console.log('Network error');
+    }
 });

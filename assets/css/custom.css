@@ -7,6 +7,12 @@ body.dark-mode .profile-section .profile-image {
   content: url("/assets/images/personal/White logo - no background - no name.svg");
 }
 
+/*----------- About Me -----------*/
+#get-counter-btn, #increment-counter-btn {
+  height: 90%;
+  font-size: 0.8rem;
+}
+
 /*----------- Skills -----------*/
 .item-inner {
   text-align: center;
